@@ -25,6 +25,6 @@ jobs:
       - run: docker build -t mocki .
       - run: |
           mkdir /tmp/data && cp examples/users.json /tmp/data/
-          docker run -d --name mocki -p 3000:3000 mocki serve /data
+          docker run -d --name mocki -p 3000:3000 -v /tmp/data:/data mocki
           sleep 2
           curl -sf http://localhost:3000/users | grep -q "Ada"
