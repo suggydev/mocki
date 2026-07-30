@@ -1,0 +1,4 @@
+[
+  { "id": 1, "userId": 1, "title": "Hello mocki", "views": 120 },
+  { "id": 2, "userId": 2, "title": "Mock APIs fast", "views": 98 }
+]

@@ -1,0 +1,52 @@
+<svg width="900" height="280" viewBox="0 0 900 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="900" y2="280" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1f1208"/>
+      <stop offset="0.5" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#081024"/>
+    </linearGradient>
+    <linearGradient id="logo" x1="220" y1="0" x2="680" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFB300"/>
+      <stop offset="0.5" stop-color="#FF6D00"/>
+      <stop offset="1" stop-color="#4D8AF0"/>
+    </linearGradient>
+    <linearGradient id="line" x1="150" y1="0" x2="750" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFB300" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#FF6D00"/>
+      <stop offset="1" stop-color="#4D8AF0" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFB300" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#FFB300" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#4D8AF0" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#4D8AF0" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="1.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="900" height="280" rx="18" fill="url(#bg)"/>
+  <rect x="0.5" y="0.5" width="899" height="279" rx="17.5" stroke="url(#line)" stroke-opacity="0.6"/>
+
+  <circle cx="95" cy="75" r="160" fill="url(#glowA)"/>
+  <circle cx="815" cy="215" r="170" fill="url(#glowB)"/>
+
+  <!-- JSON braces motif -->
+  <text x="58" y="96" font-family="Consolas, monospace" font-size="56" font-weight="900" fill="url(#logo)" opacity="0.9">{ }</text>
+  <text x="788" y="242" font-family="Consolas, monospace" font-size="56" font-weight="900" fill="url(#logo)" opacity="0.9">[ ]</text>
+
+  <text x="450" y="126" text-anchor="middle" font-family="Consolas, 'Courier New', monospace"
+        font-size="88" font-weight="900" letter-spacing="6" fill="url(#logo)" filter="url(#soft)">mocki</text>
+
+  <text x="450" y="170" text-anchor="middle" font-family="Consolas, 'Courier New', monospace"
+        font-size="19" font-weight="700" letter-spacing="5" fill="#FFB300">JSON FILES → LIVE REST API</text>
+
+  <rect x="270" y="192" width="360" height="2" fill="url(#line)"/>
+
+  <text x="450" y="228" text-anchor="middle" font-family="Consolas, 'Courier New', monospace"
+        font-size="15" letter-spacing="2" fill="#8b949e">crud · filters · pagination · cors · latency · hot reload — single binary</text>
+</svg>

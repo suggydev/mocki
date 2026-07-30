@@ -1,0 +1,5 @@
+[
+  { "id": 1, "name": "Ada Lovelace", "role": "admin", "age": 36 },
+  { "id": 2, "name": "Bob Martin", "role": "user", "age": 25 },
+  { "id": 3, "name": "Cleo Smith", "role": "user", "age": 41 }
+]
